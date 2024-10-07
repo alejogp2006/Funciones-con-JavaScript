@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+    <script src="/JS/Taller funciones.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadoras</h1>
+
+    <div class="container">
+        <h2>Conversor de Velocidad</h2>
+        <label for="velocidad">Velocidad (Km/h):</label>
+        <input type="number" id="velocidad" placeholder="Ingresa la velocidad">
+        <button onclick="convertirVelocidad()">Convertir</button>
+        <p id="resultadoVelocidad"></p>
+    </div>
+
+    <div class="container">
+        <h2>Costo de Llamada</h2>
+        <label for="duracion">Duración de la llamada (min):</label>
+        <input type="number" id="duracion" placeholder="Ingresa la duración">
+        <button onclick="calcularCostoLlamada()">Calcular Costo</button>
+        <p id="resultadoLlamada"></p>
+    </div>
+
+    <div class="container">
+        <h2>Conversor de Temperatura</h2>
+        <label for="temperatura">Temperatura (°C o °F):</label>
+        <input type="number" id="temperatura" placeholder="Ingresa la temperatura">
+        <select id="unidadTemperatura">
+            <option value="C">°C</option>
+            <option value="F">°F</option>
+        </select>
+        <button onclick="convertirTemperatura()">Convertir</button>
+        <p id="resultadoTemperatura"></p>
+    </div>
+
+    <div class="container">
+        <h2>Cálculo de IMC</h2>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Ingresa tu peso">
+        <label for="altura">Altura (m):</label>
+        <input type="number" step="0.01" id="altura" placeholder="Ingresa tu altura">
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        <p id="resultadoIMC"></p>
+    </div>
+
+</body>
+</html>
